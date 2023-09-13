@@ -1,0 +1,44 @@
+
+      /* CSS styles */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 0;
+      }
+
+      .main-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        max-width: 700px; /* Decrease the maximum width of the card */
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      #loading {
+        text-align: center;
+        display: none;
+        margin-top: 10px;
+      }
+
+      #loading i {
+        font-size: 3em;
+        animation: spin 1s infinite linear;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Set a maximum width for images to make them responsive */
+      .post img {
+        max-width: 100px; /* Ensure images don't exceed their container width */
+        height: 100px; /* Maintain image aspect ratio */
+      }
+    
